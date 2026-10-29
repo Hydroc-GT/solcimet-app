@@ -1,0 +1,52 @@
+# Variables de Entorno y Secretos
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Dependencias y Compilacion
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Documentos Temporales de Office
+~$*.xlsx
+~$*.docx
+~$*.pptx
+*.tmp
+
+# Archivos del Sistema Operativo
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs y Editores de Codigo
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Almacenamiento Local y Logs
+uploads/
+temp/
+*.log
