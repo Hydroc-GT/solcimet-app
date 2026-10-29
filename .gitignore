@@ -9,13 +9,16 @@
 node_modules/
 dist/
 build/
-.next/
-out/
 coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
 
 # Documentos Temporales de Office
 ~$*.xlsx
@@ -43,7 +46,6 @@ $RECYCLE.BIN/
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.swp
 
 # Almacenamiento Local y Logs
