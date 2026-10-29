@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# Archivos compilados de .NET
+**/bin/
+**/obj/
+
+# Archivos temporales
+*.user
+*.suo
+*.cache
+
+# Dependencias y archivos generados de Node
+**/node_modules/
+**/dist/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
