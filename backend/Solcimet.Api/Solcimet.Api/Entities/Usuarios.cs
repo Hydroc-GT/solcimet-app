@@ -9,5 +9,6 @@
         public bool Activo { get; set; } = true;
         public DateTime Creado_en { get; set; }
         public DateTime Actualizado_en { get; set; }
+        public Roles Rol { get; set; }
     }
 }

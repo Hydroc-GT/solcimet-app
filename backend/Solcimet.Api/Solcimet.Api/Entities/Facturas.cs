@@ -10,11 +10,18 @@
         public decimal? Total { get; set; }
         public string Moneda { get; set; } = "DOP";
         public string Estado_factura { get; set; } = "borrador";
-        public DateTime Fecha_registro { get; set; } //mapear en dbcontext
+        public DateTime Fecha_registro { get; set; } 
         public int? Id_tercero { get; set; }
         public int? Id_obra { get; set; }
         public int? Id_responsable { get; set; }
         public int Id_usuario { get; set; }
-        public DateTime Actualizado_en { get; set; } //mapear en dbcontext
+        public DateTime Actualizado_en { get; set; }
+
+        //propiedades de navegacion
+        public Terceros? Tercero { get; set; }
+        public Obras? Obra { get; set; }
+        public Responsables? Responsable { get; set; }
+        public Usuarios Usuario { get; set; } = null!;
+        
     }
 }

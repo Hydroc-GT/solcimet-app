@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Solcimet.Api.Data;
+using Solcimet.Api.Services;
+using Solcimet.Api.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<DatabaseContext>(options =>
-options.UseNpgsql(
-    builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection"))
+        .UseSnakeCaseNamingConvention()
+);
+
+builder.Services.AddScoped<IOcrService, OcrService>();
 
 var app = builder.Build();
 

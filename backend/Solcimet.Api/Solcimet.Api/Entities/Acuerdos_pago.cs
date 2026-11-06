@@ -8,5 +8,7 @@
         public bool Incluye_itbis { get; set; } = false;
         public DateTime Creado_en { get; set; }
         public DateTime Actualizado_en { get; set; }
+        public Obras? Obra { get; set; }
+        public Terceros? Tercero { get; set; }
     }
 }

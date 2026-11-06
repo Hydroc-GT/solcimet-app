@@ -9,5 +9,8 @@
         public decimal Monto_pagado { get; set; }
         public string? Referencia { get; set; }
         public DateTime Creado_en { get; set; }
+        public Terceros Tercero { get; set; } = null!;
+        public Obras Obra { get; set; } = null!;
+
     }
 }

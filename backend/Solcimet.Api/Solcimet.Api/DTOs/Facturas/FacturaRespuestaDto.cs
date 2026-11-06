@@ -12,6 +12,8 @@
         public string?Nom_obra { get; set;}
         public string? Nom_tercero { get; set; }
         public string? Nom_responsable { get; set; }
+        public string? Estado_factura { get; set; } 
+       
 
         public int? Id_tercero { get; set; }
         public int? Id_obra { get; set; }

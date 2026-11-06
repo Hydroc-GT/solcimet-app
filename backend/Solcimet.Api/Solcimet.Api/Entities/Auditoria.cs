@@ -8,6 +8,6 @@
         public string Entidad { get; set; } = string.Empty;
         public string Id_entidad { get; set; } = string.Empty;
         public string Cambios { get; set; } = string.Empty;
-        public DateTime Fecha_hora { get; set; } //mapear en dbcontext
+        public DateTime Fecha_hora { get; set; } 
     }
 }

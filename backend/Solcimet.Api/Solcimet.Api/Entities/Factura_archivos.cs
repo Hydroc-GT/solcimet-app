@@ -7,5 +7,7 @@
         public string Ruta_archivo { get; set; } = string.Empty;
         public string Tipo_mime { get; set; } = string.Empty;
         public DateTime Creado_en { get; set; }
+
+        public Facturas Factura { get; set; } = null!;
     }
 }

@@ -12,5 +12,6 @@
         public string Estado_obra { get; set; } = "activa";
         public DateTime Creado_en { get; set; }
         public DateTime Actualizado_en { get; set; }
+        public Terceros Cliente { get; set; } = null!;
     }
 }
